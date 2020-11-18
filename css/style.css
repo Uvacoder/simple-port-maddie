@@ -7,7 +7,11 @@
         opacity: 1;
     }
 }
-html{box-sizing: border-box;cursor: none !important;}
+html {
+    box-sizing: border-box;
+    cursor: none !important;
+    scroll-behavior: smooth;
+}
 body,
 h1,
 h2,
