@@ -28,9 +28,22 @@ figure {
     padding: 0;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: gray;
+}
+*::-webkit-scrollbar {
+  width: 14px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
 ::selection {
     background: #a2a2a2;
-    color: #fff;
+    color: gold;
 }
 
 .theme-dark a {
