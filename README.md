@@ -1,2 +1,4 @@
-# Portfolio Showcase
-## Previous version can be found [here](https://extasius.com/portfolio/)
+# Projects Showcase
+
+## My personal portfolio can be found [here](https://extasius.com/portfolio/)
+
