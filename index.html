@@ -45,23 +45,76 @@
     <body>
         <h1>Hi 👋</h1>
         <p style="font-weight: 500; font-size: 2.2em">I'm Melanys!<br>
-        You can see my portfolio <a href="https://extasius.com/portfolio/" target="_blank" alt="portfolio">here.</a></p>
-            <h2>Open Source Projects Showcase</h2>
+        <a href="https://extasius.com/portfolio/" target="_blank" alt="portfolio"></a></p>
+            <h2>Open Source Projects</h2>
         <p>
             <ul>
                 <li><a href="https://melanyss.github.io/covid19-Tracker/" alt="link" target="_blank">Covid PWA Tracker</a></li>
-                <li><a href="https://extasius.com" alt="link" target="_blank">Blog</a></li>
-                <li><a href="https://melanyss.github.io/PasswordGenerator.html" alt="link" target="_blank">Simple Password Generator</a></li>
+                <li><a href="https://melanyss.github.io/PasswordGenerator.html" alt="link" target="_blank">Password Generator</a></li>
+                <li><a href="https://extasius.com" alt="link" target="_blank">WordPress Blog</a></li>
                 <li>Awesome things are on the way! Meanwhile, be safe &amp; have a nice day☀️</li>
             </ul>
         </p>
-    <p>You can follow me on
+    <!--
+    <p>Connect with me on:
                 <a href="https://github.com/melanyss" target="_blank">GitHub</a>
                 <a href="https://melanys.medium.com/" target="_blank">Medium</a>
                 <a href="https://twitter.com/MelanysFT" target="_blank">Twitter</a>
                 <a href="https://www.linkedin.com/in/melanysft/" target="_blank">Linkedin</a>
                 <a href="https://https://www.instagram.com/melanyssss/" target="_blank">Instragram</a>
             </p>
-        <script src="main.js"></script>
+    -->
+    <div class="social-panel-container">
+        <div class="social-panel">
+            <p>Created with <i class="fa fa-heart"></i> by
+                <a target="_blank" href="https://extasius.com/portfolio">Melanys Figueredo</a></p>
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h4>Get in touch on</h4>
+            <ul>
+                <li>
+                    <a href="https://melanys.medium.com" target="_blank">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/MelanysFT" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/melanysft" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/melanyss" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/melanyssss" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button class="floating-btn">
+        Get in Touch
+    </button>
+    <div class="floating-text">
+        Part of <a href="https://melanyss.github.io/" target="_blank">Projects Showcase</a>
+    </div>
+        <script>
+            const floating_btn = document.querySelector('.floating-btn');
+        const close_btn = document.querySelector('.close-btn');
+        const social_panel_container = document.querySelector('.social-panel-container');
+        floating_btn.addEventListener('click', () => {
+            social_panel_container.classList.toggle('visible')
+        });
+        close_btn.addEventListener('click', () => {
+            social_panel_container.classList.remove('visible')
+        });
+    </script>
     </body>
 </html>
